@@ -1,0 +1,106 @@
+
+.footer__inner{
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+input:focus:required:valid {
+    border-color: green;
+    color: green;
+    box-shadow: none;
+}
+
+input:focus:required:invalid {
+    border-color: green;
+    color: green;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+<div class="container">
+
+
+    <div class="footer__inner">
+        
+
+        <div class="footer__content">
+            <div class="footer__data">
+                <!-- <div class="data__copyrite"> -->
+                    <svg class="copyrite__icon">
+                        <use xlink:href="#copyright"></use>
+                    </svg>
+                <!-- </div> -->
+                <div class="year">2022</div>
+                <a href="https://github.com/masya2021" class="link__github" target="_blank">github</a>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <div class="footer__title">
+                <h4 class="title__name">
+                    Rolling Scopes School
+                </h4>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <div class="social__list">
+                <!-- <div class="list__item"> -->
+                    <a href="https://www.instagram.com" class="social__item" target="_blank">
+                        <svg class="social__icon-item">
+                            <use xlink:href="#instagram"></use>
+                        </svg>
+                    </a>
+                <!-- </div> -->
+                <!-- <div class="list__item"> -->
+                    <a href="https://www.facebook.com" class="social__item" target="_blank">
+                        <svg class="social__icon-item">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                <!-- </div> -->
+                <!-- <div class="list__item"> -->
+                    <a href="https://www.twitter.com" class="social__item" target="_blank">
+                        <svg class="social__icon-item">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                <!-- </div> -->
+                <!-- <div class="list__item"> -->
+                    <a href="https://www.pinterest.com" class="social__item" target="_blank">
+                        <svg class="social__icon-item">
+                            <use xlink:href="#pinterest"></use>
+                        </svg>
+                    </a>
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+    </div>
+
+    
+</div>
+</footer>
