@@ -76,10 +76,10 @@ table {
 }
 
 .line__around-title{
-    text-align: center;  
-    width: 55.5%;          
-    margin: 0 auto;      
-    overflow: hidden;
+    /* text-align: center;   */
+    width: 100%;          
+    /* margin: 0 auto;       */
+    /* overflow: hidden; */
 }
 
 .title{
@@ -91,32 +91,9 @@ table {
     line-height: 2;
     text-align: center;
     color: #BDAE82;
-    /* max-width: 700px; */
-}
-
-.title::before{
-    display: block;  
-    width:274px;                    
-    content: '';                    
-    position: absolute;   
-    top:48%; 
-    background: #BDAE82;
-    border-radius: 0px;   
-    height: 2px;  
-    right: 5%;
-}
-
-.title::after{
-    display: block;                  /* делаем псевдоэлемент блоком для последующего работы с ним, как с простым div'ом */
-    width:274px;                    /* устанавливаем ширину линию. Можно использовать произвольную ширину */
-    content: '';                     /* позволяет вставлять генерируемое содержание в текст страницы, которое первоначально в тексте отсутствует */
-    position: absolute;              /* абсолютное позиционирование для управления линиями */
-    /* border-bottom: 1px solid rgb(223, 11, 11);   бордер псевдо дива, т.е. сама линия */
-    top:48%; 
-    background: #BDAE82;
-    border-radius: 0px;   
-    height: 2px;  
-    left: 5%;
+    max-width: 700px;
+    margin: 0 auto;
+    /* padding: 0 15px; */
 }
 
 .inner{
@@ -284,10 +261,35 @@ table {
     flex-direction: column;
     margin: 0 auto;
 }
+/* .skills__title{
+    margin: 0 auto;
+} */
+.skills__title:before{
+    display: block;  
+    width: 39.2%;                    
+    content: '';                    
+    position: absolute;   
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    left: 0%;
+}
+.skills__title::after{
+    display: block;                 
+    width: 39.1%;                    
+    content: '';                    
+    position: absolute;            
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    right: 0%;
+}
+
 .skills__content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     /* margin: 0 -20px; */
     margin: 0 auto;
@@ -296,6 +298,7 @@ table {
 }
 .skills__card {
     /* padding: 0 20px; */
+    margin: 0 auto;
     width: 25%;
     text-align: center;
 }
@@ -336,27 +339,32 @@ table {
 .portfolio{
     min-height: 1500px;
 }
+/* .portfolio__title{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+} */
 .portfolio__title:before{
     display: block;  
-    width: 31%;                    
+    width: 34%;                    
     content: '';                    
     position: absolute;   
     top:48%; 
     background: #BDAE82;
     border-radius: 0px;   
     height: 2px;  
-    right: 5%;
+    left: 0;
 }
 .portfolio__title::after{
     display: block;                 
-    width: 30.5%;                    
+    width: 34.3%;                    
     content: '';                    
     position: absolute;            
     top:48%; 
     background: #BDAE82;
     border-radius: 0px;   
     height: 2px;  
-    left: 5%;
+    right: 0;
 }
 .portfolio__content {
     display: flex;
@@ -428,6 +436,31 @@ table {
 .player{
     padding-top: 60px;
 }
+/* .video__title{
+    margin: 0 auto;
+} */
+.video__title:before{
+    display: block;  
+    width: 39%;                    
+    content: '';                    
+    position: absolute;   
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    left: 0;
+}
+.video__title::after{
+    display: block;                 
+    width: 38.7%;                    
+    content: '';                    
+    position: absolute;            
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    right: 0;
+}
 .video__content {
     position: relative;
     
@@ -457,6 +490,31 @@ table {
 
 .price{
     min-height: 845px;
+}
+/* .price__title{
+    margin: 0 auto;
+} */
+.price__title:before{
+    display: block;  
+    width: 39.89%;                    
+    content: '';                    
+    position: absolute;   
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    right: 60.2%;
+}
+.price__title::after{
+    display: block;                 
+    width: 39.8%;                    
+    content: '';                    
+    position: absolute;            
+    top:48%; 
+    background: #BDAE82;
+    border-radius: 0px;   
+    height: 2px;  
+    right: 0.5px;
 }
 .price__content {
     margin-top: 60px;
@@ -793,9 +851,16 @@ table {
 
 
 
-@media(max-width: 1300px){
+@media(max-width: 1400px){
     
+    .item__image{
+        width: 48%;
+        padding: 10px;
+    }
     
+    .skills__card-subtitle{
+        padding: 10px;
+    }
 
 }
 
@@ -835,13 +900,14 @@ table {
          =============    */
 
          .skills__card {
-            width: 45%;
+            width: 50%;
         }
         
         .skills__card-subtitle {
             padding: 10px;
             text-align: center;
             max-width: 320px;
+            margin: 0 auto;
         }
         
         .card__image{
@@ -874,6 +940,15 @@ table {
 
 @media(max-width: 576px){
 
-    
+
+            /*    S K I L L S 
+         =============    */
+
+    .skills__card{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+
 }
 
