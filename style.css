@@ -304,6 +304,7 @@ table {
 } */
 .card__image {
     height: 50px;
+    width: 100px;
 }
 .skills__card-title {
     margin-top: 46px;
