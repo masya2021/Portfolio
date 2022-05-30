@@ -1180,7 +1180,7 @@ table {
     .hero__hire-me {
         padding: 0;
         text-align: center;
-        width: 140px;
+        /* max-width: 140px; */
         margin-top: 45px;
     }
     .hire__me-title {
@@ -1271,7 +1271,7 @@ table {
 @media(max-width: 376px){
 
     .hero__hire-me {
-        margin-top: 15px;
+        margin-top: 5px;
     }
     .video__icon{
         width: 48px;
