@@ -155,10 +155,10 @@ table {
 
     color: #BDAE82;
 }
-.language__selection{
+.selection{
     display: flex;
 }
-.language {
+.selection__language {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -235,7 +235,7 @@ table {
     text-decoration: none;
     padding: 6px 0px 7px;
 }
-.hire__me-title {
+.hero__me-title {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -247,7 +247,7 @@ table {
     color: #000000;
     padding: 0 72px;
 }
-.hire__me-title:hover{
+.hero__me-title:hover{
     color: #fff;
 
     transition: .2s linear;
@@ -420,7 +420,7 @@ table {
 
     transition: .2s linear;
 }
-.portfolio__items {
+.inner__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -432,9 +432,9 @@ table {
 
 /*  = = =  V i d e o = = =  */
 
-.video{
-    /* min-height: 945px; */
-}
+/* .video{
+    min-height: 945px;
+} */
 .player{
     padding-top: 60px;
 }
@@ -804,10 +804,7 @@ table {
 /*     B U R G E R   M E N U 
       =======================    */
 
-.burger__menu{
-    display: none;
-}
-.burger__menu{
+.burger{
     display: none;
     background: none;
 
@@ -888,7 +885,7 @@ table {
     .menu{
         display: none;
     }
-    .burger__menu{
+    .burger{
         display: block;
         margin-left: 15px;
     }
