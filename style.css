@@ -550,7 +550,7 @@ table {
 
 .contacts{
     height: 700px;
-    background-image: url(/assets/img/Contacts/contacts.jpg);
+    background-image: url(./assets/img/Contacts/contacts.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-x: center;
